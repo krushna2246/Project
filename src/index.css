@@ -1,13 +1,347 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Basic Styling */
+
+
+
+
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.hero, .services-section, .contact-section {
+  padding: 100px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #3498db;
+  color: white;
+}
+
+.services-section {
+  background-color: #f8f9fa;
+}
+
+.contact-section {
+  background-color: #ffdb58;
+}
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Fixed Navbar */
+  .navbar {
+    background: #007bff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+  }
+  
+  .navbar .logo {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .main-section {
+    background: url("/public/bgimage.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  /* Services Section */
+  .services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e3f2fd;
+  }
+  
+/* about page */
+
+.about-container {
+  text-align: center;
+  padding: 50px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 80%;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.about-btn {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #1d70b8;
+}
+
+
+
+  /* Contact Section */
+  .contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #007bff;
+    color: white;
+  }
+
+  .contact-container {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #007bff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #0056b3;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  
+
+
+  /* Login Page Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 580px;
+    background-color: #f4f4f9;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-link {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* MentalHealthTracking.css */
+  /* .mental-health-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .mental-health-card h2 {
+    color: #007bff;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    margin-top: 15px;
+  } */
+  /* new  MentalHealthTracking.css */
+
+  .mental-health-card {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .mental-health-card h2 {
+    color: #2c3e50;
+  }
+  
+  .results-section {
+    margin-top: 20px;
+  }
+  
+  .chart-container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
